@@ -259,6 +259,10 @@
 	@include shadow-border($sitePink);
 }
 
+.open {
+  opacity: 0.5;
+}
+
 // vertical divider for <li>
 .divider {
     border-bottom: none;

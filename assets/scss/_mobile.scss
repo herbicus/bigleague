@@ -26,6 +26,7 @@
 }
 
 .l-mobile-mission {
+	opacity: 0;
 	@include centerer;
 	top: 23%;
 	background: url(../img/logo-mission-copy.png);
