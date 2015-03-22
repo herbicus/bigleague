@@ -14,7 +14,7 @@ header {
 	background: rgba($primaryDark, 0.75);
 	
 	@include media(max-width 800px, 6) {
-		z-index: 5;
+		z-index: 6;
 	}
 	
 }

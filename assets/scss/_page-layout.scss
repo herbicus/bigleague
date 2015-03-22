@@ -32,9 +32,28 @@ section {
 	height: 100%;
 	max-height: 500px;
 	pointer-events: none;
+	z-index: 5;
 	
 	@include media(max-width 800px, 6) {
 		top: 40%;
 	}
+}
+
+.l-hero-mission {
+	opacity: 1;
+	z-index: 3;
+	background: url(../img/logo-mission-copy.png);
+	@include centerer;
+	@include bg-contain;
+	width: 100%;
+	max-width: 900px;
+	height: 100%;
+	max-height: 500px;
+	pointer-events: none;
+	
+	@include media(max-width 800px, 6) {
+		top: 40%;
+	}
+	
 }
 

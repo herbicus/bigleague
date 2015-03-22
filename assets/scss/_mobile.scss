@@ -22,6 +22,19 @@
 	max-width: 250px;
 	height: 100%;
 	pointer-events: none;
+	z-index: 5;
+}
+
+.l-mobile-mission {
+	@include centerer;
+	top: 23%;
+	background: url(../img/logo-mission-copy.png);
+	@include bg-contain;
+	width: 100%;
+	max-width: 250px;
+	height: 100%;
+	pointer-events: none;
+	z-index: 4;
 }
 
 .l-mobile-container {
