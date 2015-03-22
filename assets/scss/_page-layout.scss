@@ -37,6 +37,10 @@ section {
 	@include media(max-width 800px, 6) {
 		top: 40%;
 	}
+
+	// @include media(min-width 1400px, 6) {
+	// 	max-height: 600px;
+	// }
 }
 
 .l-hero-mission {

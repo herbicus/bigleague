@@ -8,10 +8,13 @@ var bigleagueAPI = (function(options) {
 		options = options || {}
 	
 		var missionAnimation = new TimelineMax({paused: true});
-		missionAnimation.to(".l-hero-logo, .l-mobile-logo", 0.5, { autoAlpha: 0, zIndex: 1, left: "40%", ease: Back.easeInOut});
-		missionAnimation.to(".l-hero-mission, .l-logo-mission", 0.5, { autoAlpha: 1, ease: Back.easeInOut}, 0.25);
+		missionAnimation.to(".l-hero-logo, .l-mobile-logo", 0.75, { autoAlpha: 0, zIndex: 1, left: "40%", ease: Back.easeInOut});
+		missionAnimation.to(".l-baseball-img", 0.5, { autoAlpha: 0, zIndex: 1, scale: 0, ease: Quad.easeInOut}, 0.075);
+		missionAnimation.to(".l-bubble-container", 0.5, { autoAlpha: 0, zIndex: 1, right: "3%", ease: Back.easeInOut}, 0.075);
+		missionAnimation.to(".l-hero-mission, .l-logo-mission", 0.75, { autoAlpha: 1, ease: Back.easeInOut}, 0.075);
 
-		// MOBILE ICON - HAMBURGER
+		
+		// Mission Toggle Btn
 		$(".l-mission-btn").on("click", function(){
 			$(this).toggleClass("open");
 
