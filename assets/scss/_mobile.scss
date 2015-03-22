@@ -1,0 +1,58 @@
+// -------------------------------------
+//   Mobile
+// -------------------------------------
+// ----- Mobile Stylings
+// -------------------------------------
+
+.l-mobile-layout {
+	display: none;
+	min-height: 100vh;
+	
+	@include media(max-width 480px, 6) {
+		display: block;
+	}
+}
+
+.l-mobile-logo {
+	@include centerer;
+	top: 23%;
+	background: url(../img/logo.png);
+	@include bg-contain;
+	width: 100%;
+	max-width: 250px;
+	height: 100%;
+	pointer-events: none;
+}
+
+.l-mobile-container {
+	max-width: 205px;
+	background: rgba($primaryDark, 0.75);
+	min-height: 100vh;
+	
+	.l-mobile-nav {
+		padding-top: 17em;
+		text-align: center;
+		ul {
+			padding-top: 1em;
+			li {
+				display: inline-block;
+				padding: 0 2em;
+				width: 40px;
+				height: 100px;
+				margin: 0 1%;
+				text-indent: -9999px;
+				@include fade-hover;
+				&:first-child {
+					padding: 2.1em;
+				}
+			}
+		}
+	}
+
+	.l-footer-nav ul li {
+		margin: 0;
+		padding: 0;
+		width: 40px;
+		height: 40px;
+	}
+}

@@ -1,0 +1,60 @@
+// -------------------------------------
+//   Header and Footer
+// -------------------------------------
+// ----- Stylings for the Header and Footer
+// -------------------------------------
+
+
+header {
+	height: 125px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba($primaryDark, 0.75);
+	
+	@include media(max-width 800px, 6) {
+		z-index: 5;
+	}
+	
+}
+
+.l-header-nav {
+	
+	ul {
+		padding-top: 1em;
+		li {
+			display: inline-block;
+			padding: 0 2em;
+			width: 40px;
+			height: 100px;
+			margin: 0 1%;
+			text-indent: -9999px;
+			@include fade-hover;
+			&:first-child {
+				padding: 2.1em;
+			}
+		}
+	}
+}
+
+.l-mission-btn {
+	background: url("../img/btn-mission.png");
+	@include bg-contain;
+}
+
+.l-sign-btn {
+	background: url("../img/btn-sign.png");
+	@include bg-contain;
+}
+
+.l-share-btn {
+	background: url("../img/btn-share.png");
+	@include bg-contain;
+}
+
+.l-chew-btn {
+	background: url("../img/btn-chew.png");
+	@include bg-contain;
+}
+

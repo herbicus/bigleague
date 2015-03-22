@@ -1,0 +1,124 @@
+// -------------------------------------
+//   Footer
+// -------------------------------------
+// ----- Stylings for the Footer
+// -------------------------------------
+
+footer {
+	position: relative;
+}
+
+.l-footer-nav {
+	
+	ul {
+		padding-top: 1em;
+		li {
+			display: inline-block;
+			padding: 0 1.5em;
+			width: 65px;
+			height: 65px;
+			margin: 1em 0.75%;
+			text-indent: -9999px;
+			@include fade-hover;
+			
+			@include media(max-width 800px, 6) {
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+}
+
+.l-instagram-icon {
+	background: url("../img/btn-instagram.png");
+	@include bg-contain;
+}
+
+.l-twitter-icon {
+	background: url("../img/btn-twitter.png");
+	@include bg-contain;
+}
+
+.l-facebook-icon {
+	background: url("../img/btn-facebook.png");
+	@include bg-contain;
+}
+
+.l-vimeo-icon {
+	background: url("../img/btn-vimeo.png");
+	@include bg-contain;
+}
+
+.l-baseball-img {
+	width: 100%;
+	max-width: 450px;
+	height: 100%;
+	height: 600px;
+	background: url("../img/kid-baseball.png");
+	@include bg-contain;
+	float: right;
+	position: absolute;
+	bottom: -9em;
+	right: 5%;
+	
+	@include media(max-width 800px, 6) {
+		height: 500px;
+		right: -9%;
+	}
+}
+
+
+.l-bubble-container {
+	position: absolute;
+	bottom: 30em;
+	right: 5%;
+	.bubble  {
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 250px;
+		min-height: 1.5em;
+		padding: 10px;
+		background: #c7c5e2;
+		border: #541382 solid 1px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		
+		-webkit-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); 
+		box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); 
+		
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -15px;
+			left: 15%;
+			border-style: solid;
+			border-width: 15px 15px 0;
+			border-color: #541382 transparent;
+			display: block;
+			width: 0;
+			z-index: 1;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: -17.5px;
+			left: calc(15% - 3px) ;
+			border-style: solid;
+			border-width: 18px 18px 0;
+			border-color: #541382 transparent;
+			display: block;
+			width: 0;
+			z-index: 0;
+		}
+	}
+
+	@include media(max-width 800px, 6) {
+		bottom: 25em;
+		right: 1%;
+		z-index: 6;
+	}
+}
+
