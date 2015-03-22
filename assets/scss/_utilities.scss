@@ -260,7 +260,11 @@
 }
 
 .open {
-  opacity: 0.5;
+  -webkit-filter: contrast(2);
+     -moz-filter: contrast(2);
+      -ms-filter: contrast(2);
+       -o-filter: contrast(2);
+          filter: contrast(2);
 }
 
 // vertical divider for <li>
